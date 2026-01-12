@@ -171,6 +171,8 @@ conda activate BLAST
 
 echo "Step 4.5: Mapping contigs to bacterial reference genomes with BLAST..."
 
+#Make a BLAST db of the NCBI GenBank 'Complete' level Mycetohabitans genomes
+
 BLAST_DB="PATHTO/mycetohabitans_blast_db"
 CONTIGS="${results}/${ID}/SPAdes/contigs.fasta"
 BLAST_OUTPUT="${results}/${ID}/${ID}_contigs_vs_bactdb.blast.out"
