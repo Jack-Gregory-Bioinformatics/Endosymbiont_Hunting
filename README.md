@@ -18,7 +18,7 @@ The workflow is designed for **HPC environments** and supports batch execution
 ## Usage
 
 ```bash
-./Endo_hunt_BLAST.sh <Run_ID>
+./Endo_hunt.sh <Run_ID>
 ```
 
 ---
