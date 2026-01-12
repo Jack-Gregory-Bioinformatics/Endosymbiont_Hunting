@@ -31,6 +31,6 @@ done < input_srr_list.txt
 ---
 
 Including:
+- A yaml file for the creation of each conda environment used in the script
 - Custom Kraken2 db build
 - Main Endo-hunting script
-- A yaml file for the creation of each conda environment used in the script
