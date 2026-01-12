@@ -171,7 +171,7 @@ conda activate BLAST
 
 echo "Step 4.5: Mapping contigs to bacterial reference genomes with BLAST..."
 
-BLAST_DB="/lustre/home/jbg209/Research_Project-T117972/raw_data/00_Reference_Databases/BLAST/mycetohabitans_blast_db"
+BLAST_DB="PATHTO/mycetohabitans_blast_db"
 CONTIGS="${results}/${ID}/SPAdes/contigs.fasta"
 BLAST_OUTPUT="${results}/${ID}/${ID}_contigs_vs_bactdb.blast.out"
 HITS_FILE="${results}/${ID}/${ID}_bacterial_contigs.txt"
