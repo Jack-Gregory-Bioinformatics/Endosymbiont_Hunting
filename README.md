@@ -21,6 +21,13 @@ The workflow is designed for **HPC environments** and supports batch execution
 ./Endo_hunt.sh <Run_ID>
 ```
 
+For batch submissions:
+```bash
+while read srr; do
+  sbatch Endo_hunt_BLAST.sh "$srr"
+done < input_srr_list.txt
+```
+
 ---
 
 Including:
