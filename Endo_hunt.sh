@@ -248,10 +248,10 @@ conda activate BUSCO
 echo "Step 4.6: Running BUSCO (bacteria_odb10) on bacterial contigs..."
 cd "${results}/${ID}"
 busco -i ${results}/${ID}/${ID}_bacterial_contigs.fasta \
-      -l "/lustre/home/jbg209/Research_Project-T117972/raw_data/00_Reference_Genomes/BUSCO_lineages/bacteria_odb10" \
+      -l "PATHTO/BUSCO_lineages/bacteria_odb10" \
       -o "BUSCO_bacterial_only_bacteriaodb10" -m genome
 busco -i ${results}/${ID}/${ID}_bacterial_contigs.fasta \
-      -l "/lustre/home/jbg209/Research_Project-T117972/raw_data/00_Reference_Genomes/BUSCO_lineages/fungi_odb10" \
+      -l "PATHTO/BUSCO_lineages/fungi_odb10" \
       -o "BUSCO_bacterial_only_fungiodb10" -m genome
 cd ..
 cd ..
@@ -273,10 +273,10 @@ conda activate BUSCO
 echo "Running BUSCO (fungi_odb10) on non-bacterial contigs..."
 cd "${results}/${ID}"
 busco -i ${results}/${ID}/${ID}_nonbacterial_contigs.fasta \
-      -l "/lustre/home/jbg209/Research_Project-T117972/raw_data/00_Reference_Genomes/BUSCO_lineages/fungi_odb10" \
+      -l "PATHTO/BUSCO_lineages/fungi_odb10" \
       -o "BUSCO_nonbacterial_only_fungiodb10_${ID}" -m genome
 busco -i ${results}/${ID}/${ID}_nonbacterial_contigs.fasta \
-      -l "/lustre/home/jbg209/Research_Project-T117972/raw_data/00_Reference_Genomes/BUSCO_lineages/bacteria_odb10" \
+      -l "PATHTO/BUSCO_lineages/bacteria_odb10" \
       -o "BUSCO_nonbacterial_only_bacterialodb10_${ID}" -m genome
 cd ..
 cd ..
