@@ -310,13 +310,12 @@ echo "Running Kraken2 identification, database = ${DBNAME}..."
 mkdir -p ${results}/${ID}/Kraken2_metagenome_${dbs}/Kraken2
 
 if [ -f "${results}/${ID}/SPAdes/scaffolds_500.fasta" ]; then
-    kraken2 --db $DBNAME --threads 16 --confidence 0.3 --report ${results}/${ID}/Kraken2_metagenome_${dbs}/Kraken2/${ID}.k2report ${results}/${ID}/SPAdes/scaffolds_500.fasta > ${results}/${ID}/Kraken2_genome_${dbs}/Kraken2/${ID}.kraken2
+    kraken2 --db $DBNAME --threads 16 --confidence 0.3 --report ${results}/${ID}/Kraken2_metagenome_${dbs}/Kraken2/${ID}.k2report ${results}/${ID}/SPAdes/scaffolds_500.fasta > ${results}/${ID}/Kraken2_metagenome_${dbs}/Kraken2/${ID}.kraken2
 elif [ -f "${results}/${ID}/SPAdes/contigs.fasta" ]; then
-    kraken2 --db $DBNAME --threads 16 --confidence 0.3 --report ${results}/${ID}/Kraken2_metagenome_${dbs}/Kraken2/${ID}.k2report ${results}/${ID}/SPAdes/contigs.fasta > ${results}/${ID}/Kraken2_genome_${dbs}/Kraken2/${ID}.kraken2
+    kraken2 --db $DBNAME --threads 16 --confidence 0.3 --report ${results}/${ID}/Kraken2_metagenome_${dbs}/Kraken2/${ID}.k2report ${results}/${ID}/SPAdes/contigs.fasta > ${results}/${ID}/Kraken2_metagenome_${dbs}/Kraken2/${ID}.kraken2
 else
     echo "Error: Neither scaffolds_500.fasta nor contigs.fasta found in ${results}/${ID}/SPAdes/"
 fi
-## added in '--confidence 0.3' for metagenomic contig analysis, requires 1/3 of contig to match be classified
 
 kraken_output="${results}/${ID}/Kraken2_metagenome_${dbs}/Kraken2/${ID}.k2report"
 echo "Kraken2 identification complete"
