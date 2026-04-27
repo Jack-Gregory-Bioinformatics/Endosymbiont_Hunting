@@ -541,8 +541,4 @@ Suggested wording:
 
 ## License
 
-Please add an appropriate license for reuse, for example:
-
-- MIT
-- GPL-3.0
 - CC-BY-4.0 for documentation
