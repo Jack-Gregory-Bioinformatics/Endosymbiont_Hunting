@@ -159,6 +159,8 @@ The script expects a Kraken2 database specified by:
 DBNAME="KRAKEN2DBNAME"
 ```
 
+The current database used was built using (https://github.com/Jack-Gregory-Bioinformatics/endoFUN-kraken2-db-builder).
+
 Update this variable in the script to point to your Kraken2 database.
 
 Example:
