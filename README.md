@@ -541,4 +541,4 @@ Suggested wording:
 
 ## License
 
-- CC-BY-4.0 for documentation
+- GPL-3.0 license
